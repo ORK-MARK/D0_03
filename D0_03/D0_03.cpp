@@ -11,12 +11,13 @@ void ft_ft(int* nbr) {
 }
 
 void ft_ultimate_ft(int********* nbr) {
-	*nbr = 42;
+	*********nbr = 42;
 }
 
 int main()
 {
-	int a;
-	ft_ft(&a);
+	int a = 5;
+	//ft_ft();
+	//ft_ultimate_ft();
 	printf("%d\n", a); // p адрес а,  *p вывод числа 5
 }
