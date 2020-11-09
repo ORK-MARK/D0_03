@@ -41,9 +41,16 @@ void ft_putstr(char* str) {
 	}
 }
 
+int ft_strlen(char* str) {
+	int h;
+	for (h = 0; str[h] != 0; h++);
+	return h;
+}
+
 int main()
 {
-	//int ar[5]{ 1,2,3,7,5 };
+	char arr[37] = "shla sasha po shosse i sosals sushky";
+	int a = ft_strlen(arr);
 	//int a = 98;
 	//int b = 3;
 	//ft_ft();
@@ -52,6 +59,7 @@ int main()
 	//ft_div_mod();
 	//ft_ultimate_div_mod();
 	//ft_putstr();
+	//ft_strlen(arr);
 
-	//printf("%d\n", arr[3]); 
+	printf("%d\n", a); 
 }
