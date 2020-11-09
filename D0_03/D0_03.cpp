@@ -21,12 +21,20 @@ void ft_swap(int* a, int* b) {
 	*b = pa;
 }
 
+void ft_div_mod(int a, int b, int* div, int* mod) {
+	*div = a / b;
+	*mod = a % b;
+
+}
+
 int main()
 {
-	int a = 5;
-	int b = 1;
+	int a = 85;
+	int b = 10;
+	int div, mod;
 	//ft_ft();
 	//ft_ultimate_ft();
-	ft_swap(&a, &b);
-	printf("%d %d\n", a, b); // p адрес а,  *p вывод числа 5
+	//ft_swap(&a, &b);
+	ft_div_mod(a, b, &div, &mod);
+	printf("%d\n%d\n%d\n%d\n", a, b, div, mod); // p адрес а,  *p вывод числа 5
 }
