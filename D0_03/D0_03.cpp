@@ -34,14 +34,24 @@ void ft_ultimate_div_mod(int* a, int* b) {
 	*b = mod;
 }
 
+void ft_putstr(char* str) {
+	int h;
+	for (h = 0; str[h] != 0; h++) {
+		ft_putchar(str[h]);
+	}
+}
+
 int main()
 {
-	int a = 98;
-	int b = 3;
+	//int ar[5]{ 1,2,3,7,5 };
+	//int a = 98;
+	//int b = 3;
 	//ft_ft();
 	//ft_ultimate_ft();
 	//ft_swap();
 	//ft_div_mod();
-	ft_ultimate_div_mod();
-	printf("%d\n%d\n", a, b); 
+	//ft_ultimate_div_mod();
+	//ft_putstr();
+
+	//printf("%d\n", arr[3]); 
 }
