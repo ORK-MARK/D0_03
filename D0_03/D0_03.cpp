@@ -47,12 +47,26 @@ int ft_strlen(char* str) {
 	return h;
 }
 
-int main()
-{
-	char arr[37] = "shla sasha po shosse i sosals sushky";
-	int a = ft_strlen(arr);
-	//int a = 98;
-	//int b = 3;
+//int ft_factorial(int n) {
+//	int i, m, b;
+//	m = 1;
+//	b = 2;
+//
+//	if (n < 0 || n > 12) return -1;
+//
+//	for (i = 2; i <= n; i++, b++) {
+//		m *= b;
+//	}
+//	return m;
+//}
+
+char* ft_strrev(char* str) {
+
+}
+
+int main() {
+	char arr[6] = "asdfg";
+	//int a = ft_factorial(12);
 	//ft_ft();
 	//ft_ultimate_ft();
 	//ft_swap();
@@ -60,6 +74,6 @@ int main()
 	//ft_ultimate_div_mod();
 	//ft_putstr();
 	//ft_strlen(arr);
-
-	printf("%d\n", a); 
+	
+	//printf("%d\n", a); 
 }
