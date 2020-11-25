@@ -61,11 +61,25 @@ int ft_strlen(char* str) {
 //}
 
 char* ft_strrev(char* str) {
+	int h;
+	char tmp;
+	h = ft_strlen(str);
+	int i = 0;
+	h -= 1;
+	printf("%d\n", h);
+	for (; i < h; h--, i++) {
+		tmp = str[i];
+		str[i] = str[h];
+		str[h] = tmp;
+	}
 
+	return str;
 }
 
 int main() {
-	char arr[6] = "asdfg";
+	char arr[15] = "sdaa dsrf dedf";
+	//ft_strrev(arr);
+	/*char h = ft_strlen(arr);*/
 	//int a = ft_factorial(12);
 	//ft_ft();
 	//ft_ultimate_ft();
@@ -75,5 +89,5 @@ int main() {
 	//ft_putstr();
 	//ft_strlen(arr);
 	
-	//printf("%d\n", a); 
+	printf("%s\n", ft_strrev(arr)); 
 }
