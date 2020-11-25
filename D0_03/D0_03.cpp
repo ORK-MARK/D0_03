@@ -47,18 +47,18 @@ int ft_strlen(char* str) {
 	return h;
 }
 
-//int ft_factorial(int n) {
-//	int i, m, b;
-//	m = 1;
-//	b = 2;
-//
-//	if (n < 0 || n > 12) return -1;
-//
-//	for (i = 2; i <= n; i++, b++) {
-//		m *= b;
-//	}
-//	return m;
-//}
+int ft_factorial(int n) {
+	int i, m, b;
+	m = 1;
+	b = 2;
+
+	if (n < 0 || n > 12) return -1;
+
+	for (i = 2; i <= n; i++, b++) {
+		m *= b;
+	}
+	return m;
+}
 
 char* ft_strrev(char* str) {
 	int h;
@@ -66,7 +66,6 @@ char* ft_strrev(char* str) {
 	h = ft_strlen(str);
 	int i = 0;
 	h -= 1;
-	printf("%d\n", h);
 	for (; i < h; h--, i++) {
 		tmp = str[i];
 		str[i] = str[h];
